@@ -36,19 +36,21 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin: 0 18px;
+  margin: 0 11px;
 }
-
+/* */
 nav ul li a {
   text-decoration: none;
   color: white;
   text-align: center;
 }
-nav ul li a:hover {
+nav ul li a i{
   text-decoration: none;
-  color: lavender;
+  color: rgb(10, 0, 0);
 }
-
+.social img{
+  height: 25px;
+}
 .left {
   font-size: 1.5rem;
   color: white;
@@ -91,20 +93,17 @@ nav ul li a:hover {
 
 .contact ul {
   list-style: none;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   display: flex;
+
 }
-.contact ul li {
-  margin: 0 0px;
-  color: black;
-}
-.contact a {
+
+.contact a,.contact i {
   text-decoration: none;
+  color: #090c2f;
+  font-size: larger;
 }
-.contact img {
-  width: 30px;
-  margin-left: 30px;
-}
+
 button[class="write"] {
   font-family: poppins;
   background: #71a003;
@@ -186,7 +185,7 @@ button[class="write"]:hover {
   color: rgb(22, 3, 3);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 475px) {
   nav {
     position: relative;
     /* display:flex;  
@@ -214,7 +213,7 @@ button[class="write"]:hover {
   }
 
   nav ul {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -318,5 +317,15 @@ button[class="write"]:hover {
   #about-me {
     width: 100px;
     margin-left: 10px;
+  }
+  #social{
+    margin-left: 5px;
+  }
+  .social img{
+    margin-left: 8px;
+    height: 25px;
+  }
+  .social #profile{
+    margin-right: 15px;
   }
 }
